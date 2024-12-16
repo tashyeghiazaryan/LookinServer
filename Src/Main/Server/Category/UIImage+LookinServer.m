@@ -52,20 +52,20 @@
 + (nullable UIImage *)lks_imageNamed:(NSString *)name inBundle:(nullable NSBundle *)bundle withConfiguration:(nullable UIImageConfiguration *)configuration API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0))
 {
     UIImage *image = [self lks_imageNamed:name inBundle:bundle withConfiguration:configuration];
-    image.lks_imageSourceName = name;
+//    image.lks_imageSourceName = name;
     return image;
 }
 
 + (nullable UIImage *)lks_imageNamed:(NSString *)name inBundle:(nullable NSBundle *)bundle compatibleWithTraitCollection:(nullable UITraitCollection *)traitCollection API_AVAILABLE(ios(8.0))
 {
     UIImage *image = [self lks_imageNamed:name inBundle:bundle compatibleWithTraitCollection:traitCollection];
-    image.lks_imageSourceName = name;
+//    image.lks_imageSourceName = name;
     return image;
 }
 
 + (UIImage *)lks_imageNamed:(NSString *)name {
     UIImage *image = [self lks_imageNamed:name];
-    image.lks_imageSourceName = name;
+//    image.lks_imageSourceName = name;
     return image;
 }
 
