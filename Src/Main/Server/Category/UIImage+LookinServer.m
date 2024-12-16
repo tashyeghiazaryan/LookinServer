@@ -10,7 +10,8 @@
 
 #import <objc/runtime.h>
 #import "UIImage+LookinServer.h"
-#import "LookinServerDefines.h"
+#import "NSObject+Lookin.h"
+@class LookinServerDefines;
 
 @implementation UIImage (LookinServer)
 
@@ -76,13 +77,13 @@
     return image;
 }
 
-- (void)setLks_imageSourceName:(NSString *)lks_imageSourceName {
-    [self lookin_bindObject:lks_imageSourceName.copy forKey:@"lks_imageSourceName"];
-}
-
-- (NSString *)lks_imageSourceName {
-    return [self lookin_getBindObjectForKey:@"lks_imageSourceName"];
-}
+//- (void)setLks_imageSourceName:(NSString *)lks_imageSourceName {
+//    [self lookin_bindObject:lks_imageSourceName.copy forKey:@"lks_imageSourceName"];
+//}
+//
+//- (NSString *)lks_imageSourceName {
+//    return [self lookin_getBindObjectForKey:@"lks_imageSourceName"];
+//}
 
 #endif /* LOOKIN_SERVER_DISABLE_HOOK */
 

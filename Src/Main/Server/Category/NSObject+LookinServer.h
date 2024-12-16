@@ -8,7 +8,7 @@
 //  https://lookin.work
 //
 
-#import "LookinDefines.h"
+@class LookinDefines;
 #import <Foundation/Foundation.h>
 
 @class LookinIvarTrace;

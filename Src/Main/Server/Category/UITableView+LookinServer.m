@@ -9,7 +9,8 @@
 //
 
 #import "UITableView+LookinServer.h"
-#import "LookinServerDefines.h"
+#import "NSArray+Lookin.h"
+@class LookinServerDefines;
 
 @implementation UITableView (LookinServer)
 
